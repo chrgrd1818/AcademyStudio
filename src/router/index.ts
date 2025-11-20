@@ -1,5 +1,13 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import { getCurrentProfile } from '../shared/lib/supabase.config'
+
+// Extend route meta type
+declare module 'vue-router' {
+    interface RouteMeta {
+        requiresAuth?: boolean
+    }
+}
+
 import LoginView from '../views/LoginView.vue'
 import DashboardView from '../views/DashboardView.vue'
 import CoursesView from '../views/CoursesView.vue'
