@@ -1,7 +1,7 @@
 <template>
   <AdminLayout>
     <div>
-      <h2 class="text-2xl font-bold text-gray-900 mb-6">Dashboard</h2>
+      <h2 class="text-2xl font-bold text-gray-900 mb-6">{{ $t('dashboard.title') }}</h2>
       
       <!-- Stats Cards -->
       <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4 mb-8">
@@ -9,7 +9,7 @@
           <div class="p-5">
             <div class="flex items-center">
               <div class="flex-1">
-                <dt class="text-sm font-medium text-gray-500 truncate">Total Courses</dt>
+                <dt class="text-sm font-medium text-gray-500 truncate">{{ $t('dashboard.stats.totalCourses') }}</dt>
                 <dd class="mt-1 text-3xl font-semibold text-gray-900">{{ stats.courses }}</dd>
               </div>
               <div class="ml-5 flex-shrink-0">
@@ -25,7 +25,7 @@
           <div class="p-5">
             <div class="flex items-center">
               <div class="flex-1">
-                <dt class="text-sm font-medium text-gray-500 truncate">Total Quizzes</dt>
+                <dt class="text-sm font-medium text-gray-500 truncate">{{ $t('dashboard.stats.totalQuizzes') }}</dt>
                 <dd class="mt-1 text-3xl font-semibold text-gray-900">{{ stats.quizzes }}</dd>
               </div>
               <div class="ml-5 flex-shrink-0">
@@ -41,7 +41,7 @@
           <div class="p-5">
             <div class="flex items-center">
               <div class="flex-1">
-                <dt class="text-sm font-medium text-gray-500 truncate">Published</dt>
+                <dt class="text-sm font-medium text-gray-500 truncate">{{ $t('dashboard.stats.published') }}</dt>
                 <dd class="mt-1 text-3xl font-semibold text-gray-900">{{ stats.published }}</dd>
               </div>
               <div class="ml-5 flex-shrink-0">
@@ -57,7 +57,7 @@
           <div class="p-5">
             <div class="flex items-center">
               <div class="flex-1">
-                <dt class="text-sm font-medium text-gray-500 truncate">Drafts</dt>
+                <dt class="text-sm font-medium text-gray-500 truncate">{{ $t('dashboard.stats.drafts') }}</dt>
                 <dd class="mt-1 text-3xl font-semibold text-gray-900">{{ stats.drafts }}</dd>
               </div>
               <div class="ml-5 flex-shrink-0">
@@ -72,7 +72,7 @@
 
       <!-- Quick Actions -->
       <div class="bg-white shadow rounded-lg p-6">
-        <h3 class="text-lg font-medium text-gray-900 mb-4">Quick Actions</h3>
+        <h3 class="text-lg font-medium text-gray-900 mb-4">{{ $t('dashboard.quickActions.title') }}</h3>
         <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
           <router-link
             to="/courses"
@@ -81,7 +81,7 @@
             <svg class="mr-2 h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
             </svg>
-            Create New Course
+            {{ $t('dashboard.quickActions.createCourse') }}
           </router-link>
           <router-link
             to="/quizzes"
@@ -90,7 +90,7 @@
             <svg class="mr-2 h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
             </svg>
-            Create New Quiz
+            {{ $t('dashboard.quickActions.createQuiz') }}
           </router-link>
         </div>
       </div>

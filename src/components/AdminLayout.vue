@@ -5,38 +5,39 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between h-16">
           <div class="flex items-center">
-            <h1 class="text-xl font-bold text-gray-900">QuizAcademy Studio</h1>
+            <h1 class="text-xl font-bold text-gray-900">{{ $t('brand.name') }} {{ $t('brand.studio') }}</h1>
             <div class="ml-10 flex space-x-4">
               <router-link
                 to="/"
                 class="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-100 transition"
                 :class="{ 'bg-gray-100 text-gray-900': $route.path === '/' }"
               >
-                Dashboard
+                {{ $t('nav.dashboard') }}
               </router-link>
               <router-link
                 to="/courses"
                 class="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-100 transition"
                 :class="{ 'bg-gray-100 text-gray-900': $route.path === '/courses' }"
               >
-                Courses
+                {{ $t('nav.courses') }}
               </router-link>
               <router-link
                 to="/quizzes"
                 class="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-100 transition"
                 :class="{ 'bg-gray-100 text-gray-900': $route.path === '/quizzes' }"
               >
-                Quizzes
+                {{ $t('nav.quizzes') }}
               </router-link>
             </div>
           </div>
-          <div class="flex items-center">
-            <span class="text-sm text-gray-600 mr-4">{{ userEmail }}</span>
+          <div class="flex items-center space-x-2">
+            <LanguageSwitcher />
+            <span class="text-sm text-gray-600">{{ userEmail }}</span>
             <button
               @click="handleSignOut"
               class="px-4 py-2 text-sm font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-100 rounded-md transition"
             >
-              Sign Out
+              {{ $t('nav.signOut') }}
             </button>
           </div>
         </div>
@@ -54,6 +55,7 @@
 import { ref, onMounted } from 'vue'
 import { useRouter } from 'vue-router'
 import { supabase, signOut } from '../shared/lib/supabase.config'
+import LanguageSwitcher from './shared/LanguageSwitcher.vue'
 
 const router = useRouter()
 const userEmail = ref('')
