@@ -1,0 +1,69 @@
+{
+    "brand": {
+        "name": "QuizAcademy",
+        "studio": "Admin Studio"
+    },
+    "nav": {
+        "dashboard": "Dashboard",
+        "courses": "Courses",
+        "quizzes": "Quizzes",
+        "signOut": "Sign Out"
+    },
+    "dashboard": {
+        "title": "Dashboard",
+        "stats": {
+            "totalCourses": "Total Courses",
+            "totalQuizzes": "Total Quizzes",
+            "published": "Published",
+            "drafts": "Drafts"
+        },
+        "quickActions": {
+            "title": "Quick Actions",
+            "createCourse": "Create New Course",
+            "createQuiz": "Create New Quiz"
+        }
+    },
+    "courses": {
+        "title": "Courses",
+        "newCourse": "New Course",
+        "createCourse": "Create Course",
+        "edit": "Edit",
+        "published": "Published",
+        "draft": "Draft",
+        "empty": {
+            "title": "No courses",
+            "description": "Get started by creating a new course."
+        },
+        "modal": {
+            "title": "Create New Course",
+            "comingSoon": "This feature is under development. Coming soon!",
+            "close": "Close"
+        }
+    },
+    "quizzes": {
+        "title": "Quizzes",
+        "newQuiz": "New Quiz",
+        "empty": {
+            "title": "No quizzes",
+            "description": "Get started by creating a new quiz."
+        }
+    },
+    "login": {
+        "title": "QuizAcademy",
+        "subtitle": "Admin Studio",
+        "emailLabel": "Email Address",
+        "emailPlaceholder": "admin{'@'}example.com",
+        "passwordLabel": "Password",
+        "passwordPlaceholder": "••••••••",
+        "signInButton": "Sign In",
+        "signingIn": "Signing in...",
+        "adminNote": "Admin access only. Please contact support for credentials.",
+        "errors": {
+            "invalidCredentials": "Invalid login credentials. Please check your email and password.",
+            "invalidEmail": "Invalid email address format.",
+            "emailNotConfirmed": "Email not confirmed. Please check your inbox.",
+            "tooManyRequests": "Too many login attempts. Please try again later.",
+            "default": "Failed to sign in. Please check your credentials."
+        }
+    }
+}

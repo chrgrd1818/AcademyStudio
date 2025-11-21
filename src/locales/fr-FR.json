@@ -1,0 +1,69 @@
+{
+    "brand": {
+        "name": "QuizAcademy",
+        "studio": "Studio Admin"
+    },
+    "nav": {
+        "dashboard": "Tableau de Bord",
+        "courses": "Cours",
+        "quizzes": "Quiz",
+        "signOut": "Se Déconnecter"
+    },
+    "dashboard": {
+        "title": "Tableau de Bord",
+        "stats": {
+            "totalCourses": "Total des Cours",
+            "totalQuizzes": "Total des Quiz",
+            "published": "Publiés",
+            "drafts": "Brouillons"
+        },
+        "quickActions": {
+            "title": "Actions Rapides",
+            "createCourse": "Créer un Nouveau Cours",
+            "createQuiz": "Créer un Nouveau Quiz"
+        }
+    },
+    "courses": {
+        "title": "Cours",
+        "newCourse": "Nouveau Cours",
+        "createCourse": "Créer un Cours",
+        "edit": "Modifier",
+        "published": "Publié",
+        "draft": "Brouillon",
+        "empty": {
+            "title": "Aucun cours",
+            "description": "Commencez par créer un nouveau cours."
+        },
+        "modal": {
+            "title": "Créer un Nouveau Cours",
+            "comingSoon": "Cette fonctionnalité est en cours de développement. Bientôt disponible!",
+            "close": "Fermer"
+        }
+    },
+    "quizzes": {
+        "title": "Quiz",
+        "newQuiz": "Nouveau Quiz",
+        "empty": {
+            "title": "Aucun quiz",
+            "description": "Commencez par créer un nouveau quiz."
+        }
+    },
+    "login": {
+        "title": "QuizAcademy",
+        "subtitle": "Studio Admin",
+        "emailLabel": "Adresse Email",
+        "emailPlaceholder": "admin{'@'}exemple.com",
+        "passwordLabel": "Mot de Passe",
+        "passwordPlaceholder": "••••••••",
+        "signInButton": "Se Connecter",
+        "signingIn": "Connexion en cours...",
+        "adminNote": "Accès administrateur uniquement. Veuillez contacter le support pour les identifiants.",
+        "errors": {
+            "invalidCredentials": "Identifiants invalides. Veuillez vérifier votre email et mot de passe.",
+            "invalidEmail": "Format d'adresse email invalide.",
+            "emailNotConfirmed": "Email non confirmé. Veuillez vérifier votre boîte de réception.",
+            "tooManyRequests": "Trop de tentatives de connexion. Veuillez réessayer plus tard.",
+            "default": "Échec de la connexion. Veuillez vérifier vos identifiants."
+        }
+    }
+}
